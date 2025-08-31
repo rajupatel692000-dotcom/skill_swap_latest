@@ -47,3 +47,20 @@ class Skills(models.Model):
 
     def __str__(self):
         return self.name    
+
+
+class UserSkills(models.Model):
+    """
+    Model to track which skills users have added to their profile
+    """
+    class Meta:
+        db_table = 'user_skills'
+        unique_together = ['user', 'skill']
+        verbose_name_plural = 'User Skills'
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_skills')
+    skill = models.ForeignKey(Skills, on_delete=models.CASCADE, related_name='user_skills')
+    added_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.skill.name}"

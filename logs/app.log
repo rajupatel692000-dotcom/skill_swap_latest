@@ -1,0 +1,511 @@
+[INFO] 2025-08-31 23:51:22,493 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-08-31 23:51:30,046 django.request | Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\today_demo\apps\core\views.py", line 7, in HomeView
+    return render (request , "core/index.html" , {"categories" : categories})
+  File "D:\today_demo\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_details' with no arguments not found. 1 pattern(s) tried: ['courses/course_details/(?P<skill_id>[0-9]+)/\\Z']
+[ERROR] 2025-08-31 23:51:30,056 django.server | "GET / HTTP/1.1" 500 171621
+[WARNING] 2025-08-31 23:51:30,635 django.request | Not Found: /favicon.ico
+[WARNING] 2025-08-31 23:51:30,636 django.server | "GET /favicon.ico HTTP/1.1" 404 4759
+[INFO] 2025-08-31 23:53:30,865 django.utils.autoreload | D:\today_demo\apps\category_skills\views.py changed, reloading.
+[INFO] 2025-08-31 23:53:31,563 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-08-31 23:53:51,330 django.request | Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\today_demo\apps\core\views.py", line 7, in HomeView
+    return render (request , "core/index.html" , {"categories" : categories})
+  File "D:\today_demo\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_details' with no arguments not found. 1 pattern(s) tried: ['courses/course_details/(?P<skill_id>[0-9]+)/\\Z']
+[ERROR] 2025-08-31 23:53:51,337 django.server | "GET / HTTP/1.1" 500 171737
+[WARNING] 2025-08-31 23:53:51,621 django.request | Not Found: /favicon.ico
+[WARNING] 2025-08-31 23:53:51,622 django.server | "GET /favicon.ico HTTP/1.1" 404 4759
+[ERROR] 2025-08-31 23:53:53,945 django.request | Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\today_demo\apps\core\views.py", line 7, in HomeView
+    return render (request , "core/index.html" , {"categories" : categories})
+  File "D:\today_demo\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_details' with no arguments not found. 1 pattern(s) tried: ['courses/course_details/(?P<skill_id>[0-9]+)/\\Z']
+[ERROR] 2025-08-31 23:53:53,949 django.server | "GET / HTTP/1.1" 500 171737
+[ERROR] 2025-08-31 23:53:54,145 django.request | Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\today_demo\apps\core\views.py", line 7, in HomeView
+    return render (request , "core/index.html" , {"categories" : categories})
+  File "D:\today_demo\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_details' with no arguments not found. 1 pattern(s) tried: ['courses/course_details/(?P<skill_id>[0-9]+)/\\Z']
+[ERROR] 2025-08-31 23:53:54,150 django.server | "GET / HTTP/1.1" 500 171737
+[ERROR] 2025-08-31 23:53:54,350 django.request | Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\today_demo\apps\core\views.py", line 7, in HomeView
+    return render (request , "core/index.html" , {"categories" : categories})
+  File "D:\today_demo\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_details' with no arguments not found. 1 pattern(s) tried: ['courses/course_details/(?P<skill_id>[0-9]+)/\\Z']
+[ERROR] 2025-08-31 23:53:54,354 django.server | "GET / HTTP/1.1" 500 171737
+[WARNING] 2025-08-31 23:53:54,513 django.request | Not Found: /favicon.ico
+[WARNING] 2025-08-31 23:53:54,514 django.server | "GET /favicon.ico HTTP/1.1" 404 4759
+[INFO] 2025-08-31 23:54:04,391 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-08-31 23:54:06,481 django.request | Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\today_demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\today_demo\apps\core\views.py", line 7, in HomeView
+    return render (request , "core/index.html" , {"categories" : categories})
+  File "D:\today_demo\.venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\today_demo\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'course_details' with no arguments not found. 1 pattern(s) tried: ['courses/course_details/(?P<skill_id>[0-9]+)/\\Z']
+[ERROR] 2025-08-31 23:54:09,665 django.server | "GET / HTTP/1.1" 500 171737
+[WARNING] 2025-08-31 23:54:09,863 django.request | Not Found: /favicon.ico
+[WARNING] 2025-08-31 23:54:09,864 django.server | "GET /favicon.ico HTTP/1.1" 404 4759
+[INFO] 2025-08-31 23:55:28,359 django.utils.autoreload | D:\today_demo\apps\category_skills\urls.py changed, reloading.
+[INFO] 2025-08-31 23:55:29,015 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:55:54,321 django.utils.autoreload | D:\today_demo\apps\category_skills\views.py changed, reloading.
+[INFO] 2025-08-31 23:55:55,093 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:56:01,010 django.utils.autoreload | D:\today_demo\apps\category_skills\views.py changed, reloading.
+[INFO] 2025-08-31 23:56:01,666 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:56:08,087 django.utils.autoreload | D:\today_demo\apps\category_skills\views.py changed, reloading.
+[INFO] 2025-08-31 23:56:08,843 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:56:16,592 django.utils.autoreload | D:\today_demo\apps\category_skills\views.py changed, reloading.
+[INFO] 2025-08-31 23:56:17,281 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:56:29,218 django.utils.autoreload | D:\today_demo\apps\category_skills\views.py changed, reloading.
+[INFO] 2025-08-31 23:56:29,879 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:56:40,731 django.utils.autoreload | D:\today_demo\apps\category_skills\views.py changed, reloading.
+[INFO] 2025-08-31 23:56:41,399 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:57:19,662 django.server | "GET / HTTP/1.1" 200 57002
+[INFO] 2025-08-31 23:57:19,770 django.server | "GET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 18466
+[INFO] 2025-08-31 23:57:19,770 django.server | "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 200 28765
+[INFO] 2025-08-31 23:57:19,772 django.server | "GET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 101662
+[INFO] 2025-08-31 23:57:19,774 django.server | "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80827
+[INFO] 2025-08-31 23:57:19,778 django.server | "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 232022
+[INFO] 2025-08-31 23:57:19,784 django.server | "GET /static/assets/css/main.css HTTP/1.1" 200 197855
+[INFO] 2025-08-31 23:57:19,818 django.server | "GET /static/assets/img/logo.png HTTP/1.1" 200 219823
+[INFO] 2025-08-31 23:57:19,890 django.server | "GET /static/assets/js/accounts/login.js HTTP/1.1" 200 2005
+[INFO] 2025-08-31 23:57:19,903 django.server | "GET /static/assets/img/education/courses-13.webp HTTP/1.1" 200 43848
+[INFO] 2025-08-31 23:57:19,908 django.server | "GET /static/assets/img/education/students-9.webp HTTP/1.1" 200 76830
+[INFO] 2025-08-31 23:57:19,922 django.server | "GET /static/assets/img/person/person-f-3.webp HTTP/1.1" 200 26396
+[INFO] 2025-08-31 23:57:19,936 django.server | "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 200 2735
+[INFO] 2025-08-31 23:57:19,944 django.server | "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 200 13801
+[WARNING] 2025-08-31 23:57:19,951 django.server | "GET /static/assets/img/education/campus-4.webp' HTTP/1.1" 404 1879
+[INFO] 2025-08-31 23:57:19,953 django.server | "GET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1" 200 5417
+[INFO] 2025-08-31 23:57:19,958 django.server | "GET /static/assets/js/main.js HTTP/1.1" 200 5001
+[INFO] 2025-08-31 23:57:19,964 django.server | "GET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 154610
+[INFO] 2025-08-31 23:57:19,971 django.server | "GET /static/assets/js/accounts/register.js HTTP/1.1" 200 8144
+[INFO] 2025-08-31 23:57:19,978 django.server | "GET /static/assets/img/person/person-m-5.webp HTTP/1.1" 200 34974
+[INFO] 2025-08-31 23:57:19,988 django.server | "GET /static/assets/img/education/students-7.webp HTTP/1.1" 200 76830
+[INFO] 2025-08-31 23:57:19,992 django.server | "GET /static/assets/img/person/person-f-7.webp HTTP/1.1" 200 35790
+[INFO] 2025-08-31 23:57:20,002 django.server | "GET /static/assets/img/education/education-5.webp HTTP/1.1" 200 25312
+[INFO] 2025-08-31 23:57:20,006 django.server | "GET /static/assets/img/person/person-m-8.webp HTTP/1.1" 200 32196
+[INFO] 2025-08-31 23:57:20,019 django.server | "GET /static/assets/img/education/activities-3.webp HTTP/1.1" 200 134452
+[INFO] 2025-08-31 23:57:20,023 django.server | "GET /static/assets/img/person/person-f-12.webp HTTP/1.1" 200 32746
+[INFO] 2025-08-31 23:57:20,033 django.server | "GET /static/assets/img/education/teacher-6.webp HTTP/1.1" 200 61830
+[INFO] 2025-08-31 23:57:20,038 django.server | "GET /static/assets/img/person/person-m-11.webp HTTP/1.1" 200 25746
+[INFO] 2025-08-31 23:57:20,044 django.server | "GET /static/assets/img/education/teacher-2.webp HTTP/1.1" 200 101344
+[INFO] 2025-08-31 23:57:20,056 django.server | "GET /static/assets/img/education/teacher-7.webp HTTP/1.1" 200 40660
+[INFO] 2025-08-31 23:57:20,058 django.server | "GET /static/assets/img/education/teacher-4.webp HTTP/1.1" 200 71394
+[INFO] 2025-08-31 23:57:20,074 django.server | "GET /static/assets/img/education/teacher-9.webp HTTP/1.1" 200 64020
+[INFO] 2025-08-31 23:57:20,085 django.server | "GET /static/assets/img/person/person-m-4.webp HTTP/1.1" 200 25304
+[INFO] 2025-08-31 23:57:20,086 django.server | "GET /static/assets/img/person/person-m-2.webp HTTP/1.1" 200 29676
+[INFO] 2025-08-31 23:57:20,088 django.server | "GET /static/assets/img/person/person-f-1.webp HTTP/1.1" 200 42530
+[INFO] 2025-08-31 23:57:20,089 django.server | "GET /static/assets/img/blog/blog-post-1.webp HTTP/1.1" 200 73938
+[INFO] 2025-08-31 23:57:20,090 django.server | "GET /static/assets/img/person/person-f-13.webp HTTP/1.1" 200 45870
+[INFO] 2025-08-31 23:57:20,093 django.server | "GET /static/assets/img/blog/blog-post-2.webp HTTP/1.1" 200 92714
+[INFO] 2025-08-31 23:57:20,106 django.server | "GET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?e34853135f9e39acf64315236852cd5a HTTP/1.1" 200 134044
+[INFO] 2025-08-31 23:57:20,107 django.server | "GET /static/assets/img/person/person-m-10.webp HTTP/1.1" 200 34772
+[INFO] 2025-08-31 23:57:20,119 django.server | "GET /static/assets/img/blog/blog-post-3.webp HTTP/1.1" 200 63066
+[INFO] 2025-08-31 23:57:20,120 django.server | "GET /static/assets/img/education/courses-4.webp HTTP/1.1" 200 63014
+[INFO] 2025-08-31 23:57:20,338 django.server | "GET /api/get-choices/ HTTP/1.1" 200 12383
+[INFO] 2025-08-31 23:57:26,490 django.server | "GET /courses/ HTTP/1.1" 200 21458
+[INFO] 2025-08-31 23:57:26,639 django.server | "GET /media/category_skills/Design/photoshop.jpg HTTP/1.1" 200 5041
+[INFO] 2025-08-31 23:57:26,641 django.server | "GET /media/category_skills/Design/figma.jpg HTTP/1.1" 200 42272
+[INFO] 2025-08-31 23:57:26,654 django.server | "GET /media/category_skills/Business/analytics.jpg HTTP/1.1" 200 47507
+[INFO] 2025-08-31 23:57:26,655 django.server | "GET /media/category_skills/Business/finance.jpg HTTP/1.1" 200 248217
+[INFO] 2025-08-31 23:57:26,678 django.server | "GET /media/category_skills/Design/ui_ux.jpg HTTP/1.1" 200 10915
+[INFO] 2025-08-31 23:57:26,680 django.server | "GET /static/assets/js/category_skills/courses.js HTTP/1.1" 200 3980
+[INFO] 2025-08-31 23:57:26,685 django.server | "GET /media/category_skills/Technology/full_stack.jpg HTTP/1.1" 200 115345
+[INFO] 2025-08-31 23:57:30,726 django.server | "GET /courses/instructors/ HTTP/1.1" 200 16246
+[INFO] 2025-08-31 23:57:30,835 django.server | "GET /static/assets/img/default-avatar.webp HTTP/1.1" 200 5214
+[INFO] 2025-08-31 23:57:30,836 django.server | "GET /media/profile_images/demo%40123/profile_icon.png HTTP/1.1" 200 46401
+[INFO] 2025-08-31 23:57:30,845 django.server | "GET /media/profile_images/demo3/image_2025_01_08T14_06_28_312Z.png HTTP/1.1" 200 444245
+[INFO] 2025-08-31 23:58:14,730 django.server | "GET /about/ HTTP/1.1" 200 13134
+[INFO] 2025-08-31 23:58:14,808 django.server | "GET /static/assets/img/education/education-square-2.webp HTTP/1.1" 200 74738
+[INFO] 2025-08-31 23:58:14,815 django.server | "GET /static/assets/img/education/education-1.webp HTTP/1.1" 200 29630
+[INFO] 2025-08-31 23:58:14,820 django.server | "GET /static/assets/img/education/campus-8.jpg HTTP/1.1" 200 65675
+[INFO] 2025-08-31 23:58:14,822 django.server | "GET /static/assets/img/education/students-3.webp HTTP/1.1" 200 109642
+[INFO] 2025-08-31 23:58:16,568 django.server | "GET /contact/ HTTP/1.1" 200 12370
+[INFO] 2025-08-31 23:58:23,851 django.server | "GET /courses/instructors/ HTTP/1.1" 200 16246
+[INFO] 2025-08-31 23:58:25,891 django.server | "GET /courses/ HTTP/1.1" 200 21458
+[INFO] 2025-08-31 23:58:32,953 django.server | "GET /courses/course_details/15/ HTTP/1.1" 200 28913
+[INFO] 2025-08-31 23:59:00,066 django.server | "GET /courses/ HTTP/1.1" 200 21458
+[INFO] 2025-08-31 23:59:03,911 django.server | "GET /courses/course_details/12/ HTTP/1.1" 200 29065
+[INFO] 2025-08-31 23:59:08,126 django.server | "GET /courses/ HTTP/1.1" 200 21458
+[INFO] 2025-08-31 23:59:11,182 django.server | "GET /courses/course_details/6/ HTTP/1.1" 200 28864
+[INFO] 2025-08-31 23:59:55,803 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-08-31 23:59:56,072 django.server | "GET /courses/course_details/6/ HTTP/1.1" 200 28864
+[INFO] 2025-08-31 23:59:56,507 django.server | "GET /static/assets/img/creative-thinking.png HTTP/1.1" 200 23760
+[INFO] 2025-09-01 00:00:00,885 django.server | "GET /courses/course_details/6/ HTTP/1.1" 200 28864
+[INFO] 2025-09-01 00:00:00,951 django.server | "GET /static/assets/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 18466
+[INFO] 2025-09-01 00:00:00,951 django.server | "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 200 28765
+[INFO] 2025-09-01 00:00:00,953 django.server | "GET /static/assets/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 101662
+[INFO] 2025-09-01 00:00:00,954 django.server | "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80827
+[INFO] 2025-09-01 00:00:00,956 django.server | "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 232022
+[INFO] 2025-09-01 00:00:00,957 django.server | "GET /static/assets/css/main.css HTTP/1.1" 200 197855
+[INFO] 2025-09-01 00:00:00,982 django.server | "GET /static/assets/img/logo.png HTTP/1.1" 200 219823
+[INFO] 2025-09-01 00:00:00,988 django.server | "GET /static/assets/js/accounts/login.js HTTP/1.1" 200 2005
+[INFO] 2025-09-01 00:00:01,000 django.server | "GET /media/profile_images/demo3/image_2025_01_08T14_06_28_312Z.png HTTP/1.1" 200 444245
+[INFO] 2025-09-01 00:00:01,003 django.server | "GET /media/category_skills/Design/photoshop.jpg HTTP/1.1" 200 5041
+[INFO] 2025-09-01 00:00:01,015 django.server | "GET /static/assets/img/person/person-f-12.webp HTTP/1.1" 200 32746
+[INFO] 2025-09-01 00:00:01,018 django.server | "GET /static/assets/img/person/person-m-5.webp HTTP/1.1" 200 34974
+[INFO] 2025-09-01 00:00:01,020 django.server | "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 200 2735
+[INFO] 2025-09-01 00:00:01,026 django.server | "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 200 13801
+[INFO] 2025-09-01 00:00:01,112 django.server | "GET /static/assets/vendor/purecounter/purecounter_vanilla.js HTTP/1.1" 200 5417
+[INFO] 2025-09-01 00:00:01,117 django.server | "GET /static/assets/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 154610
+[INFO] 2025-09-01 00:00:01,124 django.server | "GET /static/assets/js/main.js HTTP/1.1" 200 5001
+[INFO] 2025-09-01 00:00:01,275 django.server | "GET /static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?e34853135f9e39acf64315236852cd5a HTTP/1.1" 200 134044
+[INFO] 2025-09-01 00:00:01,318 django.server | "GET /static/assets/img/creative-thinking.png HTTP/1.1" 200 23760
+[INFO] 2025-09-01 00:00:02,616 django.server | "GET / HTTP/1.1" 200 57002
+[INFO] 2025-09-01 00:00:02,676 django.server | "GET /static/assets/img/logo.png HTTP/1.1" 200 219823
+[WARNING] 2025-09-01 00:00:02,724 django.server | "GET /static/assets/img/education/campus-4.webp' HTTP/1.1" 404 1879
+[INFO] 2025-09-01 00:00:02,822 django.server | "GET /api/get-choices/ HTTP/1.1" 200 12383
+[WARNING] 2025-09-01 00:00:07,408 django.request | Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-01 00:00:07,409 django.server | "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4870
+[INFO] 2025-09-01 00:00:07,533 django.server | "GET /static/assets/vendor/purecounter/purecounter_vanilla.js.map HTTP/1.1" 200 24751
+[INFO] 2025-09-01 00:00:07,536 django.server | "GET /static/assets/vendor/swiper/swiper-bundle.min.js.map HTTP/1.1" 200 209845
+[INFO] 2025-09-01 00:00:07,538 django.server | "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 332190
+[INFO] 2025-09-01 00:00:07,596 django.server | "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 589698

@@ -20,9 +20,7 @@
         <li><a href="{% url 'category_skills:courses' %}" class="{% if request.resolver_match.url_name == 'courses' %} active {% endif %}">Courses</a></li>
         <li>
           <a href="{% url 'category_skills:instructors' %}" class="{% if request.resolver_match.url_name == 'instructors' %} active {% endif %}">Instructors</a>
-            <li>
-              <a href="{% url 'category_skills:course_details' %}" class="{% if request.resolver_match.url_name == 'course_details' %} active {% endif %}">Course Details</a>
-            </li>
+        </li>
         <li><a href="{% url 'core:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %} active {% endif %}">Contact</a></li>
         <li><a href="{% url 'core:about' %}" class="{% if request.resolver_match.url_name == 'about' %} active {% endif %}">About</a></li>
       </ul>
